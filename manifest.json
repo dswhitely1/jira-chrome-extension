@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Jira Ticket Search",
+    "version": "1.0.0",
+    "description": "Put in your SS ticket number and it will open a new tab to your Jira Ticket",
+    "options_page": "options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs", "storage"]
+}
