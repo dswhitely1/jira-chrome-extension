@@ -7,18 +7,47 @@
 </head>
 <body>
     <div class="container-sm">
-        <div class="card">
+        <div class="card my-2">
             <div class="card-header text-center">
-                <h1>Update Jira Base URL</h1>
+                <h1>Update Jira Options</h1>
             </div>
             <div class="card-body">
                 <h5 class="card-title" id="jira-url">Current Url:</h5>
-                <form>
+                <form id="url-form">
                     <label for="update-jira-url" class="form-label">Update Jira Base Url</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">URL</span>
                         <input type="text" id="update-jira-url" class="form-control">
                         <button type="submit" id="submitButton" class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-header text-center">
+                <h2>Current Prefixes</h2>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Display Name</th>
+                            <th scope="col">Prefix</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <hr>
+                <form id="prefix-form">
+                    <div class="input-group mb-3">
+                        <input type="text" id="update-jira-prefix-id" style="display: none;">
+                        <span class="input-group-text">Name</span>
+                        <input type="text" id="update-jira-prefix-name" class="form-control">
+                        <span class="input-group-text">Prefix</span>
+                        <input type="text" id="update-jira-prefix" class="form-control">
+                        <button type="submit" id="prefixButton" class="btn btn-outline-primary">Submit</button>
                     </div>
                 </form>
             </div>
