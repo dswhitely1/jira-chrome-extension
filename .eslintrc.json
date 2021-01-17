@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "max-len": "off",
+    "no-bitwise": "off",
+    "no-mixed-operators": "off",
+    "no-nested-ternary": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off"
+  }
+}
